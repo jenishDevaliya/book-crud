@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Manager System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f7fa;
+        }
+        .card-section {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+            padding: 40px;
+        }
+        .card-section h1 i {
+            margin-right: 10px;
+        }
+        .btn-custom {
+            width: 180px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card-section">
+            <div class="text-center mb-5">
+                <h1 class="display-5 text-primary"><i class="fas fa-book-open"></i>Book Manager System</h1>
+                <p class="lead text-secondary">Learn CRUD Operations with Spring Boot + Thymeleaf</p>
+            </div>
+
+            <div class="row text-start mb-4">
+                <div class="col-md-4">
+                    <h4 class="text-dark">What is CRUD?</h4>
+                    <ul>
+                        <li><strong>C</strong> Create (Add New Book)</li>
+                        <li><strong>R</strong> Read (View All Books)</li>
+                        <li><strong>U</strong> Update (Edit Book Details)</li>
+                        <li><strong>D</strong> Delete (Remove Book)</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h4 class="text-dark">Software & Tools Used:</h4>
+                    <ul>
+                        <li>Spring Boot</li>
+                        <li>Thymeleaf</li>
+                        <li>MySQL Database</li>
+                        <li>Bootstrap 5</li>
+                        <li>Font Awesome Icons</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h4 class="text-dark">Features:</h4>
+                    <ul>
+                        <li>Responsive UI</li>
+                        <li>Data Persistence with JPA</li>
+                        <li>Auto Table Creation</li>
+                        <li>Live Reload with DevTools</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="/books/new" class="btn btn-success btn-custom me-2">
+                    <i class="fas fa-plus"></i> Add New Book
+                </a>
+                <a href="/books" class="btn btn-primary btn-custom">
+                    <i class="fas fa-list"></i> Show Book List
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
